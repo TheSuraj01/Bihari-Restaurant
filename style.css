@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NAVIGATION BAR */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    margin-bottom: 3px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: blue;
+}
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    height: 300px;
+    padding: 5px 200px;
+}
+
+#home::before {
+    content: " ";
+    background: url(Images/italian-cuisine-g8c23c6e8b_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 82%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    padding-bottom:10px ;
+}
+
+.primary {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.primary {
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.secondary {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#services {
+    display: flex;
+    margin: 30px;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 30px;
+    margin: 5px 30px;
+    border-radius: 30px;
+    background-color: #d7d4d4;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+.details{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.butt{
+    margin-top: 20px;
+    margin-left: 114px;
+}
+footer{
+    height: 100px;
+    font-size: 25px;
+    display: grid;
+    padding-top: 40px;
+    justify-content: center;
+    background-color: #d7d4d4;
+    font-family: 'Dancing Script', cursive;
+}
